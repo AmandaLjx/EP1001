@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final Projects - Amanda & EP1000</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Final Project</h1>
+    </header>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">My Projects</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="safety.html">FabLab Safety</a></li>
+              <li><a href="webdevelopment.html">Web Development</a></li>
+              <li><a href="cad.html">Computer Aided Design</a></li>
+              <li><a href="3d.html" class="active">3D Modelling</a></li>
+              <li><a href="programming.html">Programming</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="finalproject.html" class="active">Final Project</a></li>
+      </ul>
+    </div>
+    <div id="list-pj">
+      <h3>List of Topics Covered</h3>
+        <ul style="list-style-type: disc;">
+          <li><a href="#intro-pj">Introduction</a></li>
+          <li><a href="#ideation-pj">Ideation</a></li>
+          <li><a href="#modelling-pj">Modelling</a></li>
+          <li><a href="#print-pj">Printing and Laser Cutting</a></li>
+          <li><a href="#circuit-pj">Circuitry</a></li>
+          <li><a href="#code-pj">Programming</a></li>
+          <li><a href="#assembly-pj">Assembly</a></li>
+          <li><a href="#finished-pj">Finished Project</a></li>
+          <li><a href="#table-2">List of Materials Used</a></li>
+          <li><a href="#review-pj">Review</a></li>
+          <li><a href="#showcase-pj">Showcase</a></li>
+        </ul>
+    </div>
+    <div id="intro-pj">
+      <h3>Self-Watering Plant System</h3>
+      <p>For my Final Project for this module, I decided to make a self-watering plant system. I came up with this idea after seeing a youtube video where a guy made a similar irrigation system using Arduino UNO. The videos I saw can be found <a href="https://youtube.com/playlist?list=PLQrWrWWVJVpdr44Zqx0NEyFqFSC5NCcL4">here</a>, they helped me understand the basic concept of how to create such a system.</p>
+    </div>
+    <div id="ideation-pj">
+      <h3>Ideation</h3>
+      <p>I started by sketching out the design that I wanted. I wanted to create a housing that can be rested on its bottom and back so I came up with a pentagon design.</p>
+      <img src="images/sketch-pj.png" alt="Rough Sketch">
+      <p>I decided that the housing was to be laser cut and the other parts I needed to create to be 3D printed (eg. sensor housing, hinge, pcb mount).</p>
+    </div>
+    <div id="modelling-pj">
+      <h3>Modelling</h3>
+      <p>I started modelling the housing using Fusion360 with the aid of using parameters. The holes for wiring and power supply is not added as these can be drilled after. The back lid is made such that I can open it when needed. I used tabs so that the pieces can be easily attached to eachother.</p>
+      <iframe src="https://ichat1941.autodesk360.com/shares/public/SH919a0QTf3c32634dcf331a96a879b7a6ee?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <p>Next, I modelled the PCB mount that i would be using inside the housing to arrange the nano as well as the LCD.</p>
+      <iframe src="https://ichat1941.autodesk360.com/shares/public/SH919a0QTf3c32634dcf28fb2e4d017039ed?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <p>Next, I modelled the sensor housing. There was to be precise holes made for the DHT11 and the LDR (later removed) to fit through. The lid can slo be easily removed when needed and a slot is made for the soil moisture sensor to fit through.</p>
+      <iframe src="https://ichat1941.autodesk360.com/shares/public/SH919a0QTf3c32634dcfd94fc10e0ddb4b1e?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <p>Next, I modelled the hinge that would allow me to open and close the back lid with ease. I had to trial and error a few times to get the clearance correct. This is the finalised design.</p>
+      <iframe src="https://ichat1941.autodesk360.com/shares/public/SH919a0QTf3c32634dcf5fa43945b3919d8a?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <p>Lastly, to help the water-tube stay better on the surface of the soil, I decided to print a few 'pegs' to stick in the soil.</p>
+      <iframe src="https://ichat1941.autodesk360.com/shares/public/SH919a0QTf3c32634dcfaf09a4dabdd88571?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+    </div>
+    <div id="print-pj">
+      <h3>Printing and Laser Cutting</h3>
+      <p>After the modelling was completed I started with the printing and laser cutting of my pieces. To start off, I laser cut my main housing by exporting each file in DXF format and I added a graphic for the front piece of the housing before laser cutting. Then I printed the pcb mount, sensor housing and the hinges and the pegs I would be using.</p>
+      <img src="images/pieces-pj.jpg" alt="Produced Pieces">
+      <img src="images/pegs-pj.jpg" alt="Printed Pegs">
+      <img src="images/hinge-pj.jpg" alt="Printed Hinge">
+    </div>
+    <div id="circuit-pj">
+      <h3>Circuitry</h3>
+      <img src="images/circuit-pj.png" alt="Circuit Schematic">
+      <img src="images/circuit2-pj.png" alt="Circuit Schematic 2">
+      <p>I used the circuit that I drew out above. I connected the wires to the nano by soldering it. I used heat shrink wires to make sure my soldered parts are protected. As this was my first time soldering, I found it pretty difficult and I took pretty to solder my first few connections. However, after soldering more, I found that I was able to complete the soldering process much quicker. Below are some pictures of what I soldered.</p>
+      <img src="images/solder1-pj.jpg" alt="Solder Power">
+      <img src="images/solder2-pj.jpg" alt="Solder Sensors">
+      <img src="images/solder3-pj.jpg" alt="Solder Nano">
+      <img src="images/solder4-pj.jpg" alt="Solder All">
+    </div>
+    <div id="code-pj">
+      <h3>Programming</h3>
+      <p>To start of the Arduino Code for my nano I put in the libraries I would be using.</p>
+      <img src="images/code1-pj.png" alt="Code Libraries">
+      <p>Next, I input all the variables I would be using in this code.</p>
+      <img src="images/code2-pj.png" alt="Code Variables">
+      <p>Then, I wrote the void setup(). This included all the setups of the different electronics I used. This is only run once. To finish it off I added a setup loading screen.</p>
+      <img src="images/code3-pj.png" alt="Code Setup">
+      <p>Next, I wrote the codes for all the input values and the necessary calculations. This was done in void loop().</p>
+      <img src="images/code4-pj.png" alt="Code Input">
+      <p>Next, I wrote the code using an if else statement for when the pump should be activated.</p>
+      <img src="images/code5-pj.png" alt="Code Pump">
+      <p>Lastly, I wrote the code for the LCD output.</p>
+      <img src="images/code6-pj.png" alt="Code LCD">
+      <p>The full code for my Arduino code can be found <a href="files/Plant Watering System.ino">here</a>.</p>
+    </div>
+    <div id="assembly-pj">
+      <h3>Assembly</h3>
+      <p>After I finished the coding, I started to assemble my project. I first attached my hinge onto the back pieces of the housing. For this, I used UHU glue as I didnt have acrylic glue on hand. This allowed for the opening and closing of the back lid.</p>
+      <img src="images/glueHinge-pj.jpg" alt="Glued Hinge">
+      <p>Next, I hot glued the top sensors into the sensor housing. This was a bit hard as the sensor housing was pretty small. </p>
+      <img src="images/glueSensor-pj.jpg" alt="Glued Sensor Internal">
+      <img src="images/glueLDR-pj.jpg" alt="Glued Sensor External">
+      <p style="clear: both; padding-top: 20px;">Afterwards, I started gluing the main housing pieces. For this I also used UHU Glue to glue everything together. The drying time was relatively long as acrylic is not a porous material. After gluing in the side walls of the housing, I glued in the pcb mount as it would be easier done this way. The finished piece is shown below.</p>
+      <img src="images/glueHousing-pj.jpg" alt="Glued Housing">
+      <p>Now that I have completed the gluing process, this is how my internal circuitry looks like. After noticing I had quite a few wires exposed I decided to make them neater by cable tying the cables together.</p>
+      <img src="images/internalCircuitry-pj.jpg" alt="Internal Circuitry">
+      <p>Moving on to the water tubing I would be using a 6mm external 4mm internal wide tubing.</p>
+      <img src="images/tube-pj.jpg" alt="Clear Tube">
+      <p>I found this too big to fit into the water pump so I decided to cut a slit at the start of the tubing so it can slide into the water pump hole much easier. Also to water the plants more efficiently, I decided to cut small snips along the sides of the tubing.</p>
+      <img src="images/tubeSlit-pj.jpg" alt="Clear Tube Slit">
+      <img src="images/tubeSnip-pj.jpg" alt="Clear Tube Snip">
+    </div>
+    <div id="finished-pj">
+      <h3>Finished Project</h3>
+      <p>These are some pictures of my project.</p>
+      <img src="images/view1-pj.jpg" alt="Project View 1">
+      <img src="images/view6-pj.jpg" alt="Project View 2">
+      <img src="images/view3-pj.jpg" alt="Project View 3">
+      <img src="images/view5-pj.jpg" alt="Project View 4">
+      <img src="images/view7-pj.jpg" alt="Project View 5">
+      <img src="images/view2-pj.jpg" alt="Project View 6">
+      <img src="images/view4-pj.jpg" alt="Project View 7">
+      <img src="images/view8-pj.jpg" alt="Project View 8">
+      <p style="clear: both; padding-top: 20px;"><b>How does my project work?</b><br> Powering on: There is a slide switch at the side which turns the system off and on.<br>The sensors: Capacitive Soil Moisture Sensor and DHT11 takes in the readings of the soil moisture, humidity and temperature. This reading is then sent to the nano which displays this code onto the LCD screen.<br>Watering: When the moisture reading of the soil drops below 35% (this can be adjusted by re-coding) the water pump activates, pumping water into the tubing and onto the surface of the soil. The watering is repeated until soil moisture is above 35%. Any water source can be used for this system.</p>
+      <p>My setup is shown below. I used a milk carton for the water source and cut out a section such that the pump could fit in nicely.</p>
+      <img src="images/setup-pj.jpg" alt="Setup View 1">
+      <img src="images/setup2-pj.jpg" alt="Setup View 2">
+    </div>
+    <div id="table-2">
+      <table>
+        <caption id="t2">List of Material Used</caption>
+        <tr>
+          <th>Material used</th>
+          <th>Estimated price</th>
+        </tr>
+        <tr>
+          <td>Arduino Nano</td>
+          <td>$8.05</td>
+        </tr>
+        <tr>
+          <td>DHT11</td>
+          <td>$1.55</td>
+        </tr>
+        <tr>
+          <td>Slide Switch</td>
+          <td>$0.80</td>
+        </tr>
+        <tr>
+          <td>Submersible Water Pump</td>
+          <td>$3.50</td>
+        </tr>
+        <tr>
+          <td>Capacitive Soil Moisture Sensor</td>
+          <td>$2.00</td>
+        </tr>
+        <tr>
+          <td>Clear Water Tube (6mm)</td>
+          <td>$2.00</td>
+        </tr>
+        <tr>
+          <td>I2C LCD</td>
+          <td>$3.00</td>
+        </tr>
+        <tr>
+          <td>2N2222</td>
+          <td>$0.50</td>
+        </tr>
+        <tr>
+          <td>3mm Acrylic Sheet</td>
+          <td>-</td>
+        </tr>
+      </table>
+    </div>
+    <div id="review-pj">
+      <h3>Review</h3>
+      <p><b>What was successful?</b><br> Generally the whole laser cutting and 3d printing process went relatively well. The laser cut and 3d printed parts had some parts which were smaller than electronics that were supposed to fit in so I just filed it down and it worked fine afterwards.</p>
+      <p><b>What needs more work?</b><br> My initial plan was to have one more sensor which was the LDR which can be seen in some of my photos. I had even glued it onto my sensor housing. However when I was testing it, the LDR changed the voltage too much such that it affected my soil moisture sensor. In the end I had to remove it. This could have been fixed by using a variable resistor to control the voltage better.</p>
+    </div>
+    <div id="showcase-pj">
+      <h3>Showcase</h3>
+      <p>Here is a 1 minute video of how my self-watering plant system works.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pH17Lllt43c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>This is my presentation slide for my project.</p>
+      <img src="images/AmandaLai_presentation.png" alt="Presentation Slide">
+      <p>This is the Ownership Card.</p>
+      <img src="images/OwnershipCard.png" alt="Ownership Card">
+    </div>
+  </body>
+  <footer>
+    <p>Copyright &copy; 2021 Amanda Lai</p>
+  </footer>
+</html>

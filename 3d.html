@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D & Laser - Amanda & EP1000</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>3D Modelling & Laser Cutting</h1>
+    </header>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">My Projects</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="safety.html">FabLab Safety</a></li>
+              <li><a href="webdevelopment.html">Web Development</a></li>
+              <li><a href="cad.html">Computer Aided Design</a></li>
+              <li><a href="3d.html" class="active">3D Modelling</a></li>
+              <li><a href="programming.html">Programming</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="finalproject.html">Final Project</a></li>
+      </ul>
+    </div>
+    <div id="intro_3d">
+      <h3>List of Topics Covered</h3>
+        <ul style="list-style-type: circle;">
+          <li><a href="#modelling-3d">3D Modelling Introduction</a>
+            <ul style="list-style-type: disc;">
+              <li>Exercise: <a href="#nametag-3d">Name Tag</a></li>
+              <li>Exercise: <a href="#lego-3d">Lego Brick</a></li>
+              <li>Exercise: <a href="#cubes-3d">Cubes</a></li>
+              <li>Exercise: <a href="#mug-3d">Mug with Handle</a></li>
+              <li>Exercise: <a href="#nut-3d">Hex Nut</a></li>
+              <li>Assignment: <a href="#chess-3d">Chess Piece - Knight</a></li>
+            </ul>
+          </li>
+          <li><a href="#cutting-intro">Computer Controlled Cutting Introduction</a></li>
+            <ul style="list-style-type: disc;">
+              <li>Exercise: <a href="#laptop-laser">Laptop Stand</a></li>
+              <li>Assignment: <a href="#musicbox-laser">Music Box</a></li>
+            </ul>
+            <li><a href="#laser-cut">Laser Cutting</a></li>
+            <li><a href="#print-3d">3D Printing</a></li>
+        </ul>
+    </div>
+    <div id="modelling-3d">
+      <h3>3d Modelling Introduction</h3>
+      <p>For 3D modelling in Fusion 360 there are 3 main methods: Extrusion, Rotation and Sculpting. Extrusion is where you extend a 2D sketch profile into a 3rd plane. Rotation is where you rotate a 2D plane profile around an axis. Sculpting is where you start with a 3D object and by adding, removing, dividing, pulling and pushing the sections form a finished product.</p>
+    </div>
+    <div id="nametag-3d">
+      <h3>Exercise: Name Tag</h3>
+      <p>Let's make a name tag. The dimensions are 30mm x 70mm x 4mm. The rim is of thickness 1.5mm and height 2.5mm. The key-ring hole with diameter of 4mm, and 1.5mm rim. Name/text to be 0.5mm below the surface. The base should be 1.5mm thick. The file of what I did can be found <a href="files/Name Tag.f3d">here</a>.</p>
+      <img src="images/cad-nametag.png" alt="Name Tag">
+      <p>Step 1, sketch the basic shape of the base, what I did is shown below. Once done, extrude this to a height of 1.5mm.</p>
+      <img src="images/nametag-step1.png" alt="Name Tag step 1">
+      <p>Step 2, on the surface of the extruded body, create a new sketch and sketch out the rim areas as shown below. Once done, extrude this to a height of 2.5mm.</p>
+      <img src="images/nametag-step2.png" alt="Name Tag step 2">
+      <p>Step 3, on the same surface as in step 2, create a new sketch and use the text function. Key in the name or text of choice, when choosing the font make sure it is not too thin. You should get something like what is shown. Once done, extrude this text to a height of 2mm. And you are done!</p>
+      <img src="images/nametag-step3.png" alt="Name Tag step 3">
+    </div>
+    <div id="lego-3d">
+      <h3>Exercise: Lego Brick</h3>
+      <p>Let's build a Lego Brick! I'm sure you have played with Legos before so why not make them yourself. I would not be going too in depth for this exercise as I followed this video on <a href="https://www.youtube.com/watch?v=6yPKMSb6ja8">How to 3D Model a Lego Brick</a> by Product Design Online. You can also follow this tutorial if you are interested. </p>
+      <p>For this exercise I made use of functions like shell, extrude, pattern and fillet. My finished product is shown below, you can also find the file of what I did <a href="files/Lego.f3d">here</a>.</p>
+      <img src="images/cad-lego.png" alt="Lego Brick">
+      <img src="images/cad-lego-under.png" alt="Lego Brick Bottom">
+    </div>
+    <div id="cubes-3d">
+      <h3>Exercise: Cubes</h3>
+      <p>Make this object that made up of 20 cubes that are 20mm x 20mm x 20mm. This is then shelled to a thickness of 4mm. For this i used functions such as copy and paste, extrude, shell and combine. The file can be found <a href="files/Cubes.f3d">here</a>.</p>
+      <img src="images/cad-cubes.png" alt="Cubes">
+      <img src="images/cad-cubes-under.png" alt="Cubes Bottom">
+      <p style="clear: both; padding-top: 20px;">Well, how to create this? There are many methods but what did I use? I took a single cube, copy and pasted it 20 times until the shape was completed. I then combined all the cubes into one body. Next, I shelled the bottom to a thickness of 4mm. That completes this exercise.</p>
+      <img src="images/cad-cube.png" alt="Single Cube">
+    </div>
+    <div id="mug-3d">
+      <h3>Exercise: Mug with Handle</h3>
+      <p>We are continuing our use of Fusion 360 by making a mug with a handle. The diamensions are 50mm(d) x 80mm(h). We needed to include an arc at the base of the mug and have the thickness be 2.5mm. Add a handle that is 6mm thick, for this it is free and easy.</p>
+      <iframe style="float: left;"src="https://ichat1941.autodesk360.com/shares/public/SH919a0QTf3c32634dcfd498bd50b7440337?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <div id="mug-1">
+        <p>To create this we first start with creating a sketch of how the main mug body should look like. This sketch profile is then revolved along the centre axis.</p>
+        <img src="images/cad-mug-step1.png" alt="Mug step 1">
+      </div>
+      <div id="mug-2">
+        <p>Next, create a new sketch on the same plane as the first and create a handle of your choice. A tip is to create the tips of the handle slightly into the revolved profile so that it is fully inside. For my handle I used the fit point spline function.</p>
+        <img src="images/cad-mug-step2.png" alt="Mug step 2">
+      </div>
+      <p style="clear: both;">Extrude this handle bar symmetrically to a thickness of 6mm. And the mug is completed!</p>
+    </div>
+    <div id="nut-3d">
+      <h3>Exercise: Hex Nut</h3>
+      <p>A hex nut? Yeah it can also be made by 3D modelling. For this I will go into slight details as I followed this video on <a href="https://www.youtube.com/watch?v=Xho87HJ-XDo">How to 3D Model a Hex Nut
+      </a> by Product Design Online. You can follow the tutorial if you are interested. This hex nut is 20mm between flat surfaces and 10mm thick.</p>
+      <iframe src="https://ichat1941.autodesk360.com/shares/public/SH919a0QTf3c32634dcf4e5dbc9156a7e84b?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <p>First, a sketch of a pentagon. Then extrude it 10mm. Next, create a triangle as shown below and use the revolve function and cut away from the current body.</p>
+      <img src="images/cad-nut-step1.png" alt="Hex Nut step 1">
+      <img src="images/cad-nut-step2.png" alt="Hex Nut step 2">
+      <p style="clear: both;">Once done create a plane in the middle of the nut and mirror the revolve cut profile. Now both sides should have this chamfer. Lastly, add the threaded hole and it is done.</p>
+      <img src="images/cad-nut-step3.png" alt="Hex nut step 3">
+    </div>
+    <div id="chess-3d">
+      <h3>Assignment: Chess Piece - Knight</h3>
+      <p>Using what was taught to far, design a knight chess piece that has a base of 30mm, height of 50mm, and head thickness of 5mm. The base should also be hollow. Using a template image as a canvas to help complete this exercise.</p>
+      <iframe src="https://ichat1941.autodesk360.com/shares/public/SH919a0QTf3c32634dcfd0f90cb74b6abfba?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <p>The template image I used is this knight chess piece template I took off the web. For this, I used functions such as extrude, loft, fillet and a few others. The curved lines can also be created using the line function.</p>
+      <img src="images/chess-canvas.png" alt="Chess Piece Canvas">
+    </div>
+    <div id="cutting-intro">
+      <h3>Computer Controlled Cutting Introduction</h3>
+      <p>For Computer Controlled Cutting, it works on a 2D profile which provides an outline of the cut. Vector file formats are needed to begin laser cutting, these are DXF (Data eXchange Format), PDF (Portable Document Format), SVG (Scalable Vector Graphics). For my assignments I would be using <a href="https://librecad.org/"><b>LibreCAD</b></a> to produce my DXF files for printing.</p>
+    </div>
+    <div id="laptop-laser">
+      <h3>Exercise: Laptop Stand</h3>
+      <p>Using Parameters in Fusion360 I made the laptop stand. The laptop stand also used other tools like combine and join to create. Using parameters make the editing process quicker especially if the thickness of the material is known.The file can be found <a href="files/Laptop Stand.f3d">here</a>.</p>
+      <img src="images/laptop-split.png" alt="Laptop 1">
+      <img src="images/laptop-fixed.png" alt="Laptop 2">
+      <p style="clear: both;">I created each coloured component then joined them such that intersecting parts were cut from the selected components.</p>
+    </div>
+    <div id="musicbox-laser">
+      <h3>Assignment: Music Box</h3>
+      <iframe src="https://ichat1941.autodesk360.com/shares/public/SH919a0QTf3c32634dcf70834869303cee0d?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      <p>Using similar steps in creating the laptop stand, I created this paramatric laser cut box. First, I started with a sketch.</p>
+      <img src="images/music-box-sketch.png" alt="Music Box Sketch">
+      <p>Then, I started using Fusion360 to model the box. Step 1, create the parameters used in this model.</p>
+      <img src="images/music-box-parameter.png" alt="Music Box Parameter">
+      <p>Step 2, I sketched out the first side using the 'tabw', 'height', 'length' and 'thickness' parameters. Then i extruded it to the 'thickness'. This forms the first side.</p>
+      <img src="images/music-box-side1.png" alt="Music Box Side 1">
+      <img src="images/music-box-side1-3d.png" alt="Music Box Side 1 3D">
+      <p style="clear: both;">Step 3, I repeated step 2 and created the 2nd side. There is a hole created for the top lid to open and close.</p>
+      <img src="images/music-box-side2.png" alt="Music Box Side 2">
+      <img src="images/music-box-side2-3d.png" alt="Music Box Side 2 3D">
+      <p style="clear: both;">Step 4, I used the Mirror tool and mirrored the current objects on a plane I created at the halfway mark of each diamension. This gave me 4 different side pieces.</p>
+      <img src="images/music-box-sides.png" alt="Music Box Sides">
+      <p>Step 5, I created the sketch of the bottom piece at 56 by 96 mm respectively. I extruded it to the 'thickness'. Next, I used the Combine tool and cut the 4 sides from the bottom piece. This gives the completed bottom piece with all the tab holes present.</p>
+      <img src="images/music-box-bottom.png" alt="Music Box Bottom">
+      <img src="images/music-box-bottom-cut.png" alt="Music Box Bottom Cut">
+      <p style="clear: both;">Step 6, I sketched the top piece with the tabs to hold the lid in the holes made on the 2nd side. I extruded it out to the 'thickness'. As seen below the extruded top has intercepted the front piece.</p>
+      <img src="images/music-box-top.png" alt="Music Box Top">
+      <img src="images/music-box-top-3d.png" alt="Music Box Top 3D">
+      <p style="clear: both;">Step 7, we need to get rid of the part on the front side that is cutting into the top. Using the Combine tool I cut the top from the front piece and forming the new front piece as shown.</p>
+      <img src="images/music-box-top-cut.png" alt="Music Box Top Cut">
+      <img src="images/music-box-front.png" alt="Music Box Front">
+      <p style="clear: both;">Now we are done with our model of the Music Box!</p>
+      <img src="images/music-box.png" alt="Music Box">
+    </div>
+    <div id="laser-cut">
+      <h3>Laser Cutting</h3>
+      <p>After the completion of the <a href="#musicbox-laser">Music Box</a> we went on to cut it with a laser machine. I first checked the parameters and diamensions of my design and making sure the thickness of the material is set correctly.In this case my material was plywood of 3.5mm.<br>To prepare my piece to cut I exported my pieces to DXF files. In order to do this i had to select a sketch and click the "Save As DXF" function. I repeated this for each side. Next, I imported all these to LibraCAD and adjusted each piece to ensure minimal material waste. The DXF file can be found <a href="files/whole music box.dxf">here</a>.</p>
+      <img src="images/music-box-dxf.png" alt="Music Box DXF">
+      <p>After exporting the DXF file from libreCAD, i imported this file to CorelDraw. CorelDraw is a graphic editor. I added in a design onto the front piece of the box, this would be engraved. Make sure the cut lines are set as hairline and the graphics for engrave.</p>
+      <img src="images/music-box-design.jpg" alt="Music Box Design">
+      <p>Next, I sent this file to the machine. In this case the machine I used was Epilog Fusion Pro. I made sure the plywood was placed correctly in the machine. The cut settings were Speed: 25%, Power: 80%, Frequency: 50%. The Engrave setting were left as default. The thickness was set to 3.5mm.</p>
+      <div id="music1">
+        <img src="images/music-box-cutting.jpg" alt="Music Box Cutting">
+        <p>Laser Cutting in progress...</p>
+      </div>
+      <div id="music2">
+        <img src="images/music-box-cutout.jpg" alt="Music Box Cutout">
+        <p>Laser Cut Pieces</p>
+      </div>
+      <p style="clear: both;">I then drilled a hole on the left side piece and started assembling. I used UHU glue to attach everything together. The finished project looked like this:</p>
+      <img src="images/music-box-view1.jpg" alt="Music Box View 1">
+      <img src="images/music-box-view2.jpg" alt="Music Box View 2">
+      <p style="clear: both;">While trying to fix everything in place, I realised my design is not very suitable as I have to make sure the top and side pieces are already placed together and attach the bottom piece on. This was harder than expected due to the music player handle needing to be in the hole.</p>
+    </div>
+    <div id="print-3d">
+      <h3>3D Printing</h3>
+      <p>We printed the <a href="#chess-3d">Knight Chess Piece</a> on a Ultimaker 2+. To prepare the file for printing we have to export the Fusion360 file as an STL file. Next open the file in Ultimaker Cura and do the necessary settings needed. For me, I used 0.2mm Layer Height, 0.8mm Wall Thickness, 20% Infill, Zig Zag Support and no Build Plate Adhesion.Slicing the print should look something like this:</p>
+      <img src="images/chess-print-cura.png" alt="Chess Piece Print Cura">
+      <p>Export the file as g.code and save to an SD card and insert into the printer. It took about 40 minutes to print. The finish print looked like this:</p>
+      <img src="images/chess-printed1.jpg" alt="Chess Piece Printed 1">
+      <img src="images/chess-printed2.jpg" alt="Chess Piece Printed 2">
+    </div>
+  </body>
+  <footer>
+    <p>Copyright &copy; 2021 Amanda Lai</p>
+  </footer>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Programming - Amanda & EP1000</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Programming</h1>
+    </header>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">My Projects</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="safety.html">FabLab Safety</a></li>
+              <li><a href="webdevelopment.html">Web Development</a></li>
+              <li><a href="cad.html">Computer Aided Design</a></li>
+              <li><a href="3d.html">3D Modelling</a></li>
+              <li><a href="programming.html" class="active">Programming</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="finalproject.html">Final Project</a></li>
+      </ul>
+    </div>
+    <div id="p_intro">
+      <h3>List of Topics Covered</h3>
+        <ul style="list-style-type: disc;">
+          <li><a href="#circuit-555">Timer with 555</a></li>
+          <li><a href="#uno-segment">UNO 7-Segment Timer</a></li>
+          <li><a href="#uno-many-states">UNO One Switch Many States</a></li>
+        </ul>
+    </div>
+    <div id="circuit-555">
+      <h3>Timer with 555</h3>
+      <p>For this exercise we are tasked to create the schematic into TinkerCAD circuits and simulate it. The schematic is shown below.</p>
+      <img src="images/555-schematic.png" alt="555 Timer Schematic">
+      <p>The 555 timer is configured as an astable using R and C values. The result is an alternating HIGH/LOW signal which causes the red LED to flash.</p>
+      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/dCECn97AGWH?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    </div>
+    <div id="uno-segment">
+      <h3>UNO 7-Segment Timer</h3>
+      <p>We were told to experiment with the 7-segment circuit, and convert it to using an UNO to control the display. The program created should count from 0-9 continously.</p>
+      <img src="images/countdown-timer.png" alt="Countdown Timer">
+      <p>I create the circuit by simply rewiring the wires to the digital inputs on the UNO board. I wrote a code that can be found in the embed below.</p>
+      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/2eOD8LI4X0u?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    </div>
+    <div id="uno-many-states">
+      <h3>UNO One Switch Many States</h3>
+      <p>First, we start with a simple LED control. Connect a LED with a 220 ohm resistor to digital pin 16 of the Arduino Uno board. <a href="https://www.tinkercad.com/things/g0zaW05kdqm">TinkerCAD file</a>.</p>
+      <img src="images/LED-1-circuit.png" alt="LED 1 Circuit">
+      <p>Then, write a code that makes the LED blink. The code I used is shown.</p>
+      <img src="images/LED-1.png" alt="LED 1">
+      <p>Second, we use the same technique and connect 3 LEDs of different colours using digital pins 6, 7 and 8. <a href="https://www.tinkercad.com/things/8zEQIdrxfN5">TinkerCAD file</a>.</p>
+      <img src="images/LED-2-circuit.png" alt="LED 2 Circuit">
+      <p>Then, write a code that produces running lights. The lights should light up in sequence eg. G > Y > R > G > Y > R > etc. The code used is shown.</p>
+      <img src="images/LED-2.png" alt="LED 2">
+      <p>Third, add a push button switch to the circuit.<a href="https://www.tinkercad.com/things/feVTeGONbxX">TinkerCAD file</a></p>
+      <img src="images/LED-3-circuit.png" alt="LED 3 Circuit">
+      <p>Then, write a code where when the switch is pressed, the LEDs will light up. When the switch is pressed again, the LEDs will turn off. The code used is shown.</p>
+      <img src="images/LED-3-1.png" alt="LED 3-1"><br>
+      <img src="images/LED-3-2.png" alt="LED 3-2">
+      <p>Forth, use the switch to control the type of lighting and flashing of the LEDs. Make the switch have 5 states. 1st - OFF, 2nd - only GREEN on, 3rd - only YELLOW on, 4th - only RED on, 5th - ALL on.</p>
+      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/hqfuwZJ1s0L?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe><br>
+      <img src="images/LED-4-1.png" alt="LED 4-1">
+      <p>This part of the code is the same as found in part 3. But the count equation is  changed to suit the 5 states.</p>
+      <img src="images/LED-4-2.png" alt="LED 4-2">
+      <p>This part of the code has more states then in 3. This is written in a way to suit the states as mentioned above.</p>
+    </div>
+  </body>
+  <footer>
+    <p>Copyright &copy; 2021 Amanda Lai</p>
+  </footer>
+</html>

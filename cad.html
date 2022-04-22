@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CAD - Amanda & EP1000</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Computer Aided Design</h1>
+    </header>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">My Projects</a>
+          <div class="sub-menu-1">
+            <ul>
+              <li><a href="safety.html">FabLab Safety</a></li>
+              <li><a href="webdevelopment.html">Web Development</a></li>
+              <li><a href="cad.html" class="active">Computer Aided Design</a></li>
+              <li><a href="3d.html">3D Modelling</a></li>
+              <li><a href="programming.html">Programming</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="finalproject.html">Final Project</a></li>
+      </ul>
+    </div>
+    <div id="cadintro">
+      <h3>List of Topics Covered</h3>
+        <ul style="list-style-type: circle;">
+          <li><a href="#rastergraphics">Raster Graphics</a></li>
+          <li><a href="#vectorgraphics">Vector Graphics</a></li>
+          <li><a href="#sketching-2d">2D Sketching Exercise 1 & 2</a></li>
+        </ul>
+    </div>
+    <div id="rastergraphics">
+      <h3>Raster Graphics</h3>
+      <p>Using the software <b><a href="https://www.gimp.org/">GIMP</a></b>, I removed the background from picture A and replaced it with picture B. I refered to this video by gimp workshop found <a href="https://www.youtube.com/watch?v=C0tg2mRroSY">here</a>.</p>
+      <div id="picture-a">
+        <img src="images/picture-A.jpeg" alt="Picture A"><p>Picture A</p>
+      </div>
+      <div id="picture-b">
+        <img src="images/picture-B.jpg" alt="Picture B"><p>Picture B</p>
+      </div>
+      <div id="alpha-channel">
+        <p>To remove the background, firstly start by clicking Layer > Transparency > Add Alpha Channel.</p>
+        <img src="images/transparency-tool.png" alt="Transparency Channel">
+      </div>
+      <div id="free-select">
+        <p>Next, use the Free Select Tool to outline the parts you want to keep, make sure the starting node is also the last node (closed off).</p>
+        <img src="images/free-select-tool.png" alt="Free Select Tool">
+      </div>
+      <div id="invert">
+        <p>Next, select Select > Invert. </p>
+        <img src="images/select-invert.png" alt="Invert">
+      </div>
+      <div id="clear">
+        <p>Lastly, select Edit > Clear. This should make the background transparent.</p>
+        <img src="images/edit-clear.png" alt="Clear">
+      </div>
+      <div id="transparent-background">
+        <img src="images/background-removed.png" alt="Transparent Background">
+      </div>
+      <div id="final-raster">
+        <p>To change the background, just add in the picture of choice and the finished product should be something like this.</p>
+        <img src="images/background-change.png" alt="Background Replaced">
+      </div>
+    </div>
+    <div id="vectorgraphics">
+      <h3>Vector Graphics</h3>
+      <p>Using the software <b><a href="https://inkscape.org/">Inkscape</a></b>, I created a vector image using this picture of a puppy. I refered to this video by Logos by Nick found <a href="https://www.youtube.com/watch?v=s-kPg4vYKfk">here</a> to complete this task.</p>
+      <img src="images/dog-image.jpg" alt="Dog Picture">
+      <p>First, you should start by adding a new layer on the top of the current one which is your image. change the opacity of your image layer to about 50% so that you can work on your drawing easily. <br>
+      Next, use the bezier tool <img src="images/bezier-vector.png" alt="Bezier tool"> to draw vectors. You can click one point then another and hold and drag to form a curve. An example is shown below.</p>
+      <img src="images/lines-vector.png" alt="Bezier lines">
+      <p>Once you are done with one area, your path should look something like this.</p>
+      <img src="images/path-example-vector.png" alt="Path example">
+      <p>Next, use the edit path tool <img src="images/editpath-vector.png" alt="Edit path tool"> to edit the the curves or lines where needed. You can move nodes or the lines itself. Once you are satisfied, just select the enclosed path area and choose the colour you would like to fill it with. To remove the outline hold 'shift' then click the cross (clear colour). <br>
+      To create a new area, remember to use a new layer so that it is way more managable. Repeat this process a few times until you are done and have a lovely vector image. I created mine both in colour and greyscale, they can be seen below. </p>
+      <img src="images/dog-vector.png" alt="Dog vector image">
+      <img src="images/bw-dog-vector.png" alt="Greyscale dog vector image">
+    </div>
+    <div id="sketching-2d">
+      <h3>2D Sketching Exercise 1 & 2</h3>
+      <p>Here, we will start the use of Autodesk Fusion 360 as our CAD software. We started learning the basics of CAD by learning how to sketch in Fusion 360. We touched simple sketch functions like lines, circles, rectangle, construction lines, measure, constraints and a few more. Fusion 360 is very similar to Autodesk Inventor that I had previously learnt in one of my year 1 modules.</p>
+      <p>We started off with exercise 1 which is a simple sketch as seen below. This involved the used of lines, rectangles and circles to complete as well as the trim functiom to make it look neater. The file can be found <a href="files/Exercise 1.f3d">here</a>.</p>
+      <img src="images/cad-exercise-1.png" alt="Sketch Exercise 1">
+      <p>Next for exercise 2, we did a slightly tougher sketch which involved using circles, polygons and construction lines as well as contraints. The file can be found <a href="files/Exercise 2.f3d">here</a>.</p>
+      <img src="images/cad-exercise-2.png" alt="Sketch Exercise 2">
+    </div>
+  </body>
+  <footer>
+    <p>Copyright &copy; 2021 Amanda Lai</p>
+  </footer>
+</html>
