@@ -157,28 +157,10 @@ header{
   font-size: 12px;
 }
 
-#safetyinfo{
+#agreementinfo{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-
-#safetyattire{
-  width: 70%;
-  float: left;
-}
-
-#outfit img{
-  width: 10%;
-  float: left;
-}
-
-#outfit{
-  margin-top: 35px;
-}
-
-#safetypractices{
-  clear: both;
 }
 
 #cadintro, #intro_3d, #p_intro{
