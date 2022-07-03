@@ -29,9 +29,44 @@
         <li><a href="finalproject.html">Final Project</a></li>
       </ul>
     </div>
-
+    <div class="main-text">
+      <h3>Introduction</h3>
+      <p>We are going to be designing and creating a ATtiny412 hello-world board. We will be making use of the EAGLE software to design our board.</p>
+      <h3>Creating the Schematic</h3>
+      <p>Before we can create the board layout, we first must layout all of our components and figure out how to link all of them.</p>
+      <p>Step 1: Create a new project. Under that project create a new schematic.</p>
+      <img src="images/eagle_new.png" alt="eagle-new">
+      <p>Step 2: Place all of components down.<br>
+      Step 3: Link all of the components as you desire.</p>
+      <img src="images/eagle_schematic.png" alt="eagle-schematic">
+      <h3>Creating the Board</h3>
+      <p>After we are done with the schematic, we can start creating the board. It may look messy at first but with some adjusting it will look presentable.</p>
+      <p>Step 1: Create the board view from the schematic view.<br>
+      Step 2: Move the components around until you are satisfied with the layout. <br>
+      Step 3: Use "Route Airwire" and "Ripup" to connect the components as shown by the yellow lines. If some of the lines are not possible, go back to your schematic and readjust it.<br>
+      Step 4: Create the borders for the board.</p>
+      <p>If everything is done correctly you should have something that looks like this.</p>
+      <img src="images/eagle_board.png" alt="eagle-board">
+      <h3>Exporting Images</h3>
+      <p>Once we are done adjusting our board layout, it's time to export. But before that, we need to prepare which layers we want to show in our image.<br>For the board traces, hide all layers but 1-Top & 17-Pads.(left) For the board outline, we hide all layers but 46-Milling.(right)</p>
+      <img src="images/eagle_board_clean.png" alt="eagle-board-clean">
+      <img src="images/eagle_board_outline.png" alt="eagle-outline">
+      <p>Use the following setting to export to image.</p>
+      <img src="images/eagle_export.png" alt="eagle-export">
+      <p>You should have something that looks like these.</p>
+      <img src="images/t412.hello.trace.holes.png" alt="hello-traces-hole">
+      <img src="images/t412.hello.outline.hole.png" alt="hello-outline-hole">
+      <p>Notice that they have holes in them? These holes can be filled in using GIMP. Your result should be as follows.</p>
+      <img src="images/t412.hello.trace.png" alt="hello-traces">
+      <img src="images/t412.hello.outline.png" alt="hello-outline">
+      <h3>Production of Hello Board</h3>
+      <p>We can now mill our hello-world board using Stepcraft 420. To know how to use it, click <a href="eproduction.html#milling">here.</a></p>
+      <p>Once milling is done, we can now solder on the components. And we are DONE!</p>
+      <img src="images/milled-hello.jpg" alt="milled-hello">
+      <img src="images/t412-hello.jpg" alt="hello-board">
+    </div>
   </body>
   <footer>
-    <p>Copyright &copy; 2021 Amanda Lai</p>
+    <p>Copyright &copy; 2022 Amanda Lai</p>
   </footer>
 </html>
