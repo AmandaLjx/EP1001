@@ -29,7 +29,65 @@
         <li><a href="finalproject.html">Final Project</a></li>
       </ul>
     </div>
-
+    <div class="main-text">
+      <h3>Topics Covered</h3>
+      <ul style="list-style-type: circle;">
+        <li><a href="#g-code">PCB G-Gode</a></li>
+        <li><a href="#milling">PCB Milling</a></li>
+        <li><a href="#assembly">PCB Assembly</a></li>
+      </ul>
+      <h3>Introduction</h3>
+      <p>Why make our own PCB?<br>It is to suit customised electronics to meet product requirements and also for better product integration.</p>
+      <p>For our PCB production we would be using Stepcraft 420. We would be fabricating a FTDI and UPDI board.</p>
+      <div id="g-code">
+        <h3>PCB G-Code</h3>
+        <p>Before we can start machining our PCB we would first need to have a design ready. We are already given the the board traces and outline as shown below.</p>
+        <p><b>FDTI Board</b></p>
+        <img src="images/ch330-ftdi_outline.png" alt="ftdi-outline">
+        <img src="images/ch330-ftdi_traces.png" alt="ftdi-traces">
+        <p><b>UPDI Board</b></p>
+        <img src="images/ftdi2updi_outline.png" alt="updi-outline">
+        <img src="images/ftdi2updi_traces.png" alt="updi-traces">
+        <p>Next we head to <a href="https://skeatz.github.io/mods/">mods community</a> created by Mr Steven Chew.<br>Do the following: right click > Programs > Open Server Program > Mill 2D PCB png. You should see the following:</p>
+        <img src="images/mods_main.png" alt="mods-main">
+        <p>Step 1: Select "mill traces"<br>
+        Step 2: Select the board's trace image file <br>
+        Step 3: Select "calculate" <br>
+        You should be shown the mill path as well as have a g-code file automatically downloaded.</p>
+        <img src="images/mods_calculate.png" alt="mods-cal">
+        <img src="images/mods_mill.png" alt="mods-mill">
+        <p>Repeat steps 1 to 3 for the board outline.</p>
+        <p>FTDI G-codes: <a href="files/ftdi_outline.nc">outline</a> | <a href="files/ftdi_traces.nc">traces</a><br>
+        UPDI G-codes: <a href="files/updi_outline.nc">outline</a> | <a href="files/updi_traces.nc">traces</a></p>
+      </div>
+      <div id="milling">
+        <h3>PCB Milling</h3>
+        <p>Now we move on to milling. We will be using Stepcraft 420 in this module. First we need to set up the board we are going to cut. <br><br>
+        Step 1: Stick double sided tape evenly onto the back of the board.<br>
+        Step 2: Position the board on the machine bed.Ensure that the board is level and stuck well onto the machine bed.<br>
+        Step 3: Put in the milling bit of choice and tighten well.</p>
+        <img src="images/pcb-mill-1.jpg" alt="pcb-mill-1">
+        <p>Next we have to calibrate the software before we can start running it. We will be using UCCNC software.<br><br>
+        Step 4: Load the board's traces g-code file into the software.<br>
+        Step 5: Set the machine's Z-axis zero using "purge". Be careful to centre the mill bit directly over the z-zero sensor.<br>
+        Step 6: Move the mill head to the desired X-axis and Y-axis. Set the machine's X & Y-axis zero.<br>
+        Step 7: Once everything is set, click "cycle start".</p>
+        <img src="images/uccnc.jpg" alt="uccnc">
+        <p>Our PCB milling has started! If you notice a build up of dust just use a vacuum or brush to get rid of it. Once the traces is completed, just repeat step 4 & 7 again for the outline.</p>
+        <img src="images/pcb-mill-2.jpg" alt="pcb-mill-2">
+        <img src="images/pcb-mill-3.jpg" alt="pcb-mill-3">
+        <img src="images/pcb-mill-4.jpg" alt="pcb-mill-4">
+        <p>After milling is completed, there may be some burrs present. Just use some sand paper and sand them away! They should look like this after.</p>
+        <img src="images/milled-ftdi.jpg" alt="milled-ftdi">
+        <img src="images/milled-updi.jpg" alt="milled-updi">
+      </div>
+      <div id="assembly">
+        <h3>PCB Assembly</h3>
+        <p>Now that we are done with fabricating our PCB boards, it's time to solder on the components. This would be much easier if you have a reference to refer to when you are soldering. This is how mine looks after I finished soldering!</p>
+        <img src="images/ftdi.jpg" alt="ftdi">
+        <img src="images/updi.jpg" alt="updi">
+      </div>
+    </div>
   </body>
   <footer>
     <p>Copyright &copy; 2021 Amanda Lai</p>

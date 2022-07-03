@@ -166,7 +166,7 @@ header{
   margin-right: auto;
 }
 
-#{
+.main-text{
   clear: both;
   width: 80%;
   margin-left: auto;
@@ -175,7 +175,29 @@ header{
   padding-top: 20px;
   text-align: justify;
 }
-[alt=""]{
+
+[alt="ftdi-outline"], [alt="ftdi-traces"], [alt="updi-outline"], [alt="updi-traces"], [alt="mods-cal"], [alt="mods-mill"]{
+  float: left;
+  width: 50%;
+  padding-bottom: 20px;
+}
+[alt="pcb-mill-1"]{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+[alt="mods-main"], [alt="uccnc"]{
+  width: 100%;
+}
+[alt="pcb-mill-2"],[alt="pcb-mill-3"],[alt="pcb-mill-4"]{
+  float: left;
+  width: 33%;
+}
+[alt="milled-ftdi"],[alt="ftdi"]{
+  width: 30%;
+  margin-left: 20%;
+}
+[alt="milled-updi"],[alt="updi"]{
   width: 30%;
 }
 
