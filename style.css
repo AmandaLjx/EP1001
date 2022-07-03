@@ -238,26 +238,7 @@ header{
   margin-left: auto;
   margin-right: auto;
 }
-#projects table,th,td{
-  border: 2px solid #00245A;
-  border-collapse: collapse;
-}
-#projects th,td{
-  padding: 15px;
-  font-size: 16px;
-}
-#projects th{
-  text-align: left;
-  font-size: 18px;
-  background-color: #00245A;
-  color: #fff;
-}
-#projects table{
-  border-spacing: 5px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 #projects caption{
   font-weight: bold;
   font-size: 20px;
