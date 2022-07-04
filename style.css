@@ -210,7 +210,13 @@ header{
   width: 30%;
   margin-left: 35%;
 }
-
+.fusion {
+  clear: both;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
 
 footer{
   clear: both;
