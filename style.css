@@ -181,7 +181,7 @@ header{
   width: 50%;
   padding-bottom: 20px;
 }
-[alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"]{
+[alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"],[alt="hello-demo"]{
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
@@ -190,9 +190,9 @@ header{
   float: left;
   width: 100%;
 }
-[alt="hello-url"],[alt="hello-demo"]{
-  float: left;
-  width: 100%;
+[alt="hello-url"]{
+  width: 60%;
+  margin-left: 20%;
   padding-bottom: 20px;
 }
 [alt="pcb-mill-2"],[alt="pcb-mill-3"],[alt="pcb-mill-4"]{
@@ -210,6 +210,7 @@ header{
   width: 30%;
   margin-left: 35%;
 }
+
 
 footer{
   clear: both;
