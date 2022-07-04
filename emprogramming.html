@@ -29,7 +29,37 @@
         <li><a href="finalproject.html">Final Project</a></li>
       </ul>
     </div>
-
+    <div class="main-text">
+      <h3>Topics Covered</h3>
+      <ul style="list-style-type: circle;">
+        <li><a href="#ino-library">Library Installation</a></li>
+        <li><a href="#ino-demo">Programming Demo</a></li>
+      </ul>
+      <div id="ino-library">
+        <h3>Library Installation</h3>
+        <p>Before we can program our ATtiny412 hello-world board in Arduino, we need to first install a library that can read the board.<br>We will be using the ATTinyCore by Spence Konde. The link to the library can be found<a href="https://github.com/SpenceKonde/ATTinyCore/blob/master/Installation.md"> here</a>.</p>
+        <p>To install the library follow these steps.<br>
+        Step 1: Copy the boards manager url and paste it ibto the "Additional Boards Manager URLs"</p>
+        <img src="images/ino-library-url.png" alt="library-url">
+        <img src="images/hello-url.png" alt="hello-url">
+        <p>Step 2: Open the board manager. (Tools > Boards > Boards Manager) <br>
+        Step 3: Find and install "ATTinyCore by Spence Konde". Ensure it is the latest version.</p>
+        <img src="images/ino-board-manager.png" alt="board-manager">
+        <p>Step 4: Select ATtiny412 without Optiboot</p>
+        <img src="images/hello-board-select.png" alt="hello-select">
+        <p>And now we are ready to start programming our board!</p>
+      </div>
+      <div id="ino-demo">
+        <h3>Programming Demo</h3>
+        <p>We are going to do a simple demo to make sure that our hello-world board works! Run a simple code like the following.</p>
+        <img src="images/hello-demo.png" alt="hello-demo">
+        <p>To run the code to our board we would need to use "upload Using Programmer" (found under "Sketch").</p>
+        <p><b>Problems I Faced</b></p>
+        <p>My board was faulty and Mr Steven Chew kindly helped me to figure out the issues as I didnt know what was wrong. After replacing both the MCU and the led I finally had a working board!</p>
+        <video width="100%" src="videos/hello-demo.mov" autoplay muted>
+        </video>
+      </div>
+    </div>
   </body>
   <footer>
     <p>Copyright &copy; 2022 Amanda Lai</p>
