@@ -181,12 +181,14 @@ p{
 }
 
 [alt="ftdi-outline"],[alt="ftdi-traces"],[alt="updi-outline"], [alt="updi-traces"],[alt="mods-cal"], [alt="mods-mill"],[alt="eagle-board-clean"],[alt="eagle-outline"],[alt="hello-traces-hole"],[alt="hello-outline-hole"],[alt="hello-traces"],[alt="hello-outline"],[alt="milled-hello"],[alt="hello-board"],[alt="custom-trace"],[alt="custom-outline"],
-[alt="milled-custom-traces"],[alt="milled-custom-pcb"],[alt="pcb-components"],[alt="pcb-soldered"],[alt="pcb-final"],[alt="pcb-markings"],[alt="cnc-stand1"],[alt="cnc-stand2"],[alt="soldered-neopixels"],[alt="neopixel-ohm"],[alt="resin-cured"],[alt="resin-sanded"]{
+[alt="milled-custom-traces"],[alt="milled-custom-pcb"],[alt="pcb-components"],[alt="pcb-soldered"],[alt="pcb-final"],[alt="pcb-markings"],[alt="cnc-stand1"],[alt="cnc-stand2"],[alt="soldered-neopixels"],[alt="neopixel-ohm"],[alt="resin-cured"],[alt="resin-sanded"],
+[alt="finished-v1"],[alt="finished-v2"],[alt="finished-v4"],[alt="top-v1"],[alt="top-v2"],[alt="top-v4"]{
   float: left;
   width: 50%;
   padding-bottom: 20px;
 }
-[alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"],[alt="hello-demo"],[alt="ATtiny-pins"],[alt="sketch-failed"],[alt="sketch-final"],[alt="pcb-problem"],[alt="jumper-wire"],[alt="neopixel-glued"],[alt="programmer"]{
+[alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"],[alt="hello-demo"],[alt="ATtiny-pins"],[alt="sketch-failed"],[alt="sketch-final"],[alt="pcb-problem"],[alt="jumper-wire"],[alt="neopixel-glued"],[alt="programmer"]
+{
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
@@ -195,10 +197,9 @@ p{
   float: left;
   width: 100%;
 }
-[alt="hello-url"],[alt="circuit-sketch"]{
+[alt="hello-url"],[alt="circuit-sketch"],[alt="connected-wires"],[alt="attached-front"]{
   width: 60%;
   margin-left: 20%;
-  padding-bottom: 20px;
 }
 [alt="pcb-mill-2"],[alt="pcb-mill-3"],[alt="pcb-mill-4"]{
   float: left;
@@ -211,14 +212,18 @@ p{
 [alt="milled-updi"],[alt="updi"],[alt="stand-model2"],[alt="wired-switch"],[alt="resin-poured"]{
   width: 30%;
 }
-[alt="eagle-export"],[alt="cnc-sand"]{
+[alt="eagle-export"],[alt="cnc-sand"],[alt="components"]{
   width: 30%;
   margin-left: 35%;
 }
-[alt="presentation"],[alt="neopixel-test"],[alt="sensor-test"],[alt="button-test"],[alt="final-code-1"],[alt="final-code-2"]{
+[alt="presentation"],[alt="neopixel-test"],[alt="sensor-test"],[alt="button-test"],[alt="final-code-1"],[alt="final-code-2"],[alt="attiny1614-pins"],[alt="all-components"]{
   width: 100%;
 }
-
+[alt="finished-v3"],[alt="top-v3"]{
+  clear: both;
+  float: left;
+  width: 50%;
+}
 
 
 .fusion {
