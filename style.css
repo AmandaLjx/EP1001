@@ -27,6 +27,9 @@ header{
   text-align: center;
   padding-top: 45px;
 }
+p{
+  clear: both;
+}
 
 .menu-bar {
   background-color: #FFFFFF;
@@ -177,7 +180,7 @@ header{
 }
 
 [alt="ftdi-outline"],[alt="ftdi-traces"],[alt="updi-outline"], [alt="updi-traces"],[alt="mods-cal"], [alt="mods-mill"],[alt="eagle-board-clean"],[alt="eagle-outline"],[alt="hello-traces-hole"],[alt="hello-outline-hole"],[alt="hello-traces"],[alt="hello-outline"],[alt="milled-hello"],[alt="hello-board"],[alt="custom-trace"],[alt="custom-outline"],
-[alt="milled-custom-traces"],[alt="milled-custom-pcb"],[alt="pcb-components"],[alt="pcb-soldered"],[alt="pcb-final"],[alt="pcb-markings"]{
+[alt="milled-custom-traces"],[alt="milled-custom-pcb"],[alt="pcb-components"],[alt="pcb-soldered"],[alt="pcb-final"],[alt="pcb-markings"],[alt="cnc-stand1"],[alt="cnc-stand2"]{
   float: left;
   width: 50%;
   padding-bottom: 20px;
@@ -200,11 +203,11 @@ header{
   float: left;
   width: 33%;
 }
-[alt="milled-ftdi"],[alt="ftdi"]{
+[alt="milled-ftdi"],[alt="ftdi"],[alt="stand-model1"]{
   width: 30%;
   margin-left: 20%;
 }
-[alt="milled-updi"],[alt="updi"]{
+[alt="milled-updi"],[alt="updi"],[alt="stand-model2"]{
   width: 30%;
 }
 [alt="eagle-export"]{
@@ -214,11 +217,18 @@ header{
 [alt="presentation"]{
   width: 100%;
 }
+
+
+
 .fusion {
   clear: both;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+  text-align: center;
+}
+.embed{
+  clear: both;
   text-align: center;
 }
 
