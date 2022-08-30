@@ -176,12 +176,13 @@ header{
   text-align: justify;
 }
 
-[alt="ftdi-outline"],[alt="ftdi-traces"],[alt="updi-outline"], [alt="updi-traces"],[alt="mods-cal"], [alt="mods-mill"],[alt="eagle-board-clean"],[alt="eagle-outline"],[alt="hello-traces-hole"],[alt="hello-outline-hole"],[alt="hello-traces"],[alt="hello-outline"],[alt="milled-hello"],[alt="hello-board"],[alt="custom-trace"],[alt="custom-outline"]{
+[alt="ftdi-outline"],[alt="ftdi-traces"],[alt="updi-outline"], [alt="updi-traces"],[alt="mods-cal"], [alt="mods-mill"],[alt="eagle-board-clean"],[alt="eagle-outline"],[alt="hello-traces-hole"],[alt="hello-outline-hole"],[alt="hello-traces"],[alt="hello-outline"],[alt="milled-hello"],[alt="hello-board"],[alt="custom-trace"],[alt="custom-outline"],
+[alt="milled-custom-traces"],[alt="milled-custom-pcb"],[alt="pcb-components"],[alt="pcb-soldered"],[alt="pcb-final"],[alt="pcb-markings"]{
   float: left;
   width: 50%;
   padding-bottom: 20px;
 }
-[alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"],[alt="hello-demo"],[alt="ATtiny-pins"],[alt="sketch-failed"],[alt="sketch-final"]{
+[alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"],[alt="hello-demo"],[alt="ATtiny-pins"],[alt="sketch-failed"],[alt="sketch-final"],[alt="pcb-problem"]{
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
