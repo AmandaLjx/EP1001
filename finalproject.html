@@ -30,7 +30,133 @@
         <li><a href="finalproject.html" class="active">Final Project</a></li>
       </ul>
     </div>
-
+    <div class="main-text">
+      <h3>Topics Covered</h3>
+      <ul style="list-style-type: circle;">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#ideation">Ideation</a></li>
+        <li><a href="#bom">Bill of Materials</a></li>
+        <li><a href="#custom-pcb">PCB Fabrication</a></li>
+        <li><a href="#">Circuitry</a></li>
+        <li><a href="#">CNC Machining</a></li>
+        <li><a href="#">Resin Pouring</a></li>
+        <li><a href="#">Programming</a></li>
+        <li><a href="#">Assembly</a></li>
+        <li><a href="#">Finished Project</a></li>
+        <li><a href="#">Review</a></li>
+        <li><a href="#showcase">Showcase</a></li>
+      </ul>
+      <div id="intro">
+        <h3>Lazy Waterer</h3>
+        <p>For my Final project for this module, I decided to make an EZ plant watering system.
+          I decided on making my EP1000 simpler and more efficient to use, I removed unnecessary components.
+          I decided on a modular system where everything is portable and easy to switch around.</p>
+      </div>
+      <div id="ideation">
+        <h3>Ideation</h3>
+        <p>With this initial idea, I wanted to use a wifi board ESP8622.
+          Where the watering system can be controlled through a phone app/web remotely.</p>
+        <img src="images/project_sketch.jpg" alt="sketch-failed">
+        <p>However, due to my inexperience with using a wifi module, my teacher Mr Chew suggested that I simplify my project.
+          As such, I decided to use ATtiny1614 instead with the following setup.
+          The shelf was also not such a great idea and I decided a pot stand would be much better.</p>
+        <img src="images/project_sketch_final.jpg" alt="sketch-final">
+      </div>
+      <div id="bom">
+        <table>
+          <caption id="table-bom">Bill of Materials</caption>
+          <tr>
+            <th>Material used</th>
+            <th>Estimated price</th>
+          </tr>
+          <tr>
+            <td>Copper PCB Board</td>
+            <td>$-</td>
+          </tr>
+          <tr>
+            <td>ATtiny1614</td>
+            <td>$1.50</td>
+          </tr>
+          <tr>
+            <td>A03400 (n-channel MOSFFET)</td>
+            <td>$-</td>
+          </tr>
+          <tr>
+            <td>1N4001 (diode)</td>
+            <td>$-</td>
+          </tr>
+          <tr>
+            <td>AMS1117 - 5V</td>
+            <td>$-</td>
+          </tr>
+          <tr>
+            <td>Resistors 1K & 1M</td>
+            <td>$-</td>
+          </tr>
+          <tr>
+            <td>Capacitors 10uF & 1uF</td>
+            <td>$-</td>
+          </tr>
+          <tr>
+            <td>4xAA Battery Case (6V)</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td>AA Batteries x4</td>
+            <td>$2.00</td>
+          </tr>
+          <tr>
+            <td>NeoPixel x 10 LEDs</td>
+            <td>$-</td>
+          </tr>
+          <tr>
+            <td>Submersible Water Pump</td>
+            <td>$3.50</td>
+          </tr>
+          <tr>
+            <td>Mechanical Keyboard Switch</td>
+            <td>$0.60</td>
+          </tr>
+          <tr>
+            <td>Slide switch</td>
+            <td>$0.80</td>
+          </tr>
+          <tr>
+            <td><a href="https://shopee.sg/Capacitive-Soil-Moisture-Sensor-Module-Soil-Humidity-Digital-Display-Relay-Control-Module-Automatic-Watering-For-Arduino-i.240782317.20206742015">Resistive Soil Moisture Sensor</a></td>
+            <td>$3.96</td>
+          </tr>
+          <tr>
+            <td><a href="https://shopee.sg/%E3%80%90ear%E3%80%911M-Colorful-Food-Grade-Silicone-Tube-Beer-Milk-Soft-Rubber-Dia-6mm*8mm-i.282536843.9854070711">6mm*8mm White Silicon Tube</a></td>
+            <td>$2.04</td>
+          </tr>
+          <tr>
+            <td>Resin</td>
+            <td>$-</td>
+          </tr>
+          <tr>
+            <td>18mm Plywood</td>
+            <td>$-</td>
+          </tr>
+          <tr>
+            <td>Water Container</td>
+            <td>FREE</td>
+          </tr>
+        </table>
+      </div>
+      <div id="custom-pcb">
+        <h3>PCB Fabrication</h3>
+        <p>Before I can begin designing the layout of my PCB, I sketched out what components and modules I would like to place on my PCB.</p>
+        <img src="images/circuit_sketch.jpg" alt="circuit-sketch">
+      </div>
+      <div id="showcase">
+        <h3>Showcase</h3>
+        <p>Here is a video of my final project fabrication process as well as how it works.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l_SPYISoCNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Here is my project presentation slide.</p>
+        <img src="presentation.png" alt="presentation">
+        <p> </p>
+      </div>
+    </div>
   </body>
   <footer>
     <p>Copyright &copy; 2022 Amanda Lai</p>

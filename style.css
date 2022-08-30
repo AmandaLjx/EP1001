@@ -181,7 +181,7 @@ header{
   width: 50%;
   padding-bottom: 20px;
 }
-[alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"],[alt="hello-demo"],[alt="ATtiny-pins"]{
+[alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"],[alt="hello-demo"],[alt="ATtiny-pins"],[alt="sketch-failed"],[alt="sketch-final"]{
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
@@ -190,7 +190,7 @@ header{
   float: left;
   width: 100%;
 }
-[alt="hello-url"]{
+[alt="hello-url"],[alt="circuit-sketch"]{
   width: 60%;
   margin-left: 20%;
   padding-bottom: 20px;
@@ -210,12 +210,48 @@ header{
   width: 30%;
   margin-left: 35%;
 }
+[alt="presentation"]{
+  width: 100%;
+}
 .fusion {
   clear: both;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
+}
+
+#bom{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#bom table,th,td{
+  border: 2px solid #00245A;
+  border-collapse: collapse;
+}
+#bom th,td{
+  padding: 15px;
+  font-size: 16px;
+}
+#bom th{
+  text-align: left;
+  font-size: 18px;
+  background-color: #00245A;
+  color: #fff;
+}
+#bom table{
+  border-spacing: 5px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#bom caption{
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 footer{
