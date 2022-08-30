@@ -176,7 +176,7 @@ header{
   text-align: justify;
 }
 
-[alt="ftdi-outline"],[alt="ftdi-traces"],[alt="updi-outline"], [alt="updi-traces"],[alt="mods-cal"], [alt="mods-mill"],[alt="eagle-board-clean"],[alt="eagle-outline"],[alt="hello-traces-hole"],[alt="hello-outline-hole"],[alt="hello-traces"],[alt="hello-outline"],[alt="milled-hello"],[alt="hello-board"]{
+[alt="ftdi-outline"],[alt="ftdi-traces"],[alt="updi-outline"], [alt="updi-traces"],[alt="mods-cal"], [alt="mods-mill"],[alt="eagle-board-clean"],[alt="eagle-outline"],[alt="hello-traces-hole"],[alt="hello-outline-hole"],[alt="hello-traces"],[alt="hello-outline"],[alt="milled-hello"],[alt="hello-board"],[alt="custom-trace"],[alt="custom-outline"]{
   float: left;
   width: 50%;
   padding-bottom: 20px;
@@ -186,7 +186,7 @@ header{
   margin-left: 25%;
   margin-right: 25%;
 }
-[alt="mods-main"], [alt="uccnc"],[alt="eagle-schematic"],[alt="eagle-board"],[alt="library-url"],[alt="hello-select"]{
+[alt="mods-main"], [alt="uccnc"],[alt="eagle-schematic"],[alt="eagle-board"],[alt="library-url"],[alt="hello-select"],[alt="custom-sch"],[alt="custom-pcb"]{
   float: left;
   width: 100%;
 }
