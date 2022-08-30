@@ -20,6 +20,7 @@ h1{
 }
 
 h3{
+  clear: both;
   font-size: 19px;
 }
 
@@ -180,12 +181,12 @@ p{
 }
 
 [alt="ftdi-outline"],[alt="ftdi-traces"],[alt="updi-outline"], [alt="updi-traces"],[alt="mods-cal"], [alt="mods-mill"],[alt="eagle-board-clean"],[alt="eagle-outline"],[alt="hello-traces-hole"],[alt="hello-outline-hole"],[alt="hello-traces"],[alt="hello-outline"],[alt="milled-hello"],[alt="hello-board"],[alt="custom-trace"],[alt="custom-outline"],
-[alt="milled-custom-traces"],[alt="milled-custom-pcb"],[alt="pcb-components"],[alt="pcb-soldered"],[alt="pcb-final"],[alt="pcb-markings"],[alt="cnc-stand1"],[alt="cnc-stand2"]{
+[alt="milled-custom-traces"],[alt="milled-custom-pcb"],[alt="pcb-components"],[alt="pcb-soldered"],[alt="pcb-final"],[alt="pcb-markings"],[alt="cnc-stand1"],[alt="cnc-stand2"],[alt="soldered-neopixels"],[alt="neopixel-ohm"],[alt="resin-cured"],[alt="resin-sanded"]{
   float: left;
   width: 50%;
   padding-bottom: 20px;
 }
-[alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"],[alt="hello-demo"],[alt="ATtiny-pins"],[alt="sketch-failed"],[alt="sketch-final"],[alt="pcb-problem"]{
+[alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"],[alt="hello-demo"],[alt="ATtiny-pins"],[alt="sketch-failed"],[alt="sketch-final"],[alt="pcb-problem"],[alt="jumper-wire"],[alt="neopixel-glued"],[alt="programmer"]{
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
@@ -203,18 +204,18 @@ p{
   float: left;
   width: 33%;
 }
-[alt="milled-ftdi"],[alt="ftdi"],[alt="stand-model1"]{
+[alt="milled-ftdi"],[alt="ftdi"],[alt="stand-model1"],[alt="wired-slide"],[alt="resin-vacuum"]{
   width: 30%;
   margin-left: 20%;
 }
-[alt="milled-updi"],[alt="updi"],[alt="stand-model2"]{
+[alt="milled-updi"],[alt="updi"],[alt="stand-model2"],[alt="wired-switch"],[alt="resin-poured"]{
   width: 30%;
 }
-[alt="eagle-export"]{
+[alt="eagle-export"],[alt="cnc-sand"]{
   width: 30%;
   margin-left: 35%;
 }
-[alt="presentation"]{
+[alt="presentation"],[alt="neopixel-test"],[alt="sensor-test"],[alt="button-test"],[alt="final-code-1"],[alt="final-code-2"]{
   width: 100%;
 }
 

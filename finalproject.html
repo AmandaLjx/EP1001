@@ -37,12 +37,13 @@
         <li><a href="#ideation">Ideation</a></li>
         <li><a href="#bom">Bill of Materials</a></li>
         <li><a href="#custom-pcb">PCB Fabrication</a></li>
+        <li><a href="#wiring">Wiring</a></li>
         <li><a href="#cnc-stand">CNC Machining</a></li>
-        <li><a href="#">Resin Pouring</a></li>
-        <li><a href="#">Programming</a></li>
-        <li><a href="#">Assembly</a></li>
-        <li><a href="#">Finished Project</a></li>
-        <li><a href="#">Review</a></li>
+        <li><a href="#resin">Resin Pouring</a></li>
+        <li><a href="#programming-final">Programming</a></li>
+        <li><a href="#assembly">Assembly</a></li>
+        <li><a href="#finished">Finished Project</a></li>
+        <li><a href="#review">Review</a></li>
         <li><a href="#showcase">Showcase</a></li>
       </ul>
       <div id="intro">
@@ -60,6 +61,9 @@
           As such, I decided to use ATtiny1614 instead with the following setup.
           The shelf was also not such a great idea and I decided a pot stand would be much better.</p>
         <img src="images/project_sketch_final.jpg" alt="sketch-final">
+        <p><b>Soil Moisture Sensor</b><br>
+        As it was my first time using this particular moisture sensor, I followed this <a href="https://www.icstation.com/soil-moisture-hygrometer-detection-humidity-sensor-module-corrosion-resistance-probe-arduino-p-12322.html">
+        website's</a> information as well as this <a href="https://youtu.be/KC78i5nCh-Y">youtube video</a> by Brandon Jacobson.</p>
       </div>
       <div id="bom">
         <table>
@@ -167,6 +171,21 @@
         <img src="images/final-pcb.jpg" alt="pcb-final">
         <img src="images/pcb-markings.jpg" alt="pcb-markings">
       </div>
+      <div id="wiring">
+        <h3>Wiring</h3>
+        <p>As I have decided to use a modular design, I wanted all my components to be easily removable and replaced with something else.
+        I made use of jumper wires to connect most if not all my components to my PCB board.
+        <br>To make my connections via jumper wires, I stripped one end of the wires.</p>
+        <img src="images/jumper-wire.jpg" alt="jumper-wire">
+        <p>I then attached jumper wires to all my pcb connections. Some examples are shown below.</p>
+        <img src="images/wired-slide.jpg" alt="wired-slide">
+        <img src="images/wired-switch.jpg" alt="wired-switch">
+        <p>For my NeoPixels, I wanted them to be in a ring shape thus I cut up the strip of LEDs into 5 seperate strips of 2 LEDs.
+        After looking at this <a href="https://learn.adafruit.com/adafruit-neopixel-uberguide/best-practices">website</a> on how to operate NeoPixels, I learnt that a resistor is adviced to be in connection to D-in pin.
+        Thus, I connected a 470 ohm resistor to my D-in pin wire.</p>
+        <img src="images/soldered-neopixels.jpg" alt="soldered-neopixels">
+        <img src="images/neopixel-ohm.jpg" alt="neopixel-ohm">
+      </div>
       <div id="cnc-stand">
         <h3>CNC Machining</h3>
         <p>I made use of Fusion 360 to create my model of the pot stand. My model is shown below</p>
@@ -180,9 +199,56 @@
         <img src="images/cnc-stand1.jpg" alt="cnc-stand1">
         <img src="images/cnc-stand2.jpg" alt="cnc-stand2">
         <p>When the milling was done, I was left with pieces that had many burrs. I used a sander to sand down the flat and larger parts, a picture of me sanding is shown. As for the smaller parts I used sandpaper.</p>
-        <img src="images/cnc-sand.png" alt="cnc-sand">
+        <img src="images/cnc-sand.jpg" alt="cnc-sand">
       </div>
+      <div id="resin">
+        <h3>Resin Pouring</h3>
+        <p>To prepare for my resin pour, I needed to secure my neopixels to the plywood so it would not float up. I did so with hot glue.</p>
+        <img src="images/neopixel-glued.jpg" alt="neopixel-glued">
+        <p>For my pour, I estimated that I would need about 200g of resin in total. The resin I used was 3:1 (hardener). After mixing the resin, I put the mixed resin into a vacuum chamber where the bubbles were brought to the surface.
+        After letting the bubbles set, I poured the resin into the cutout on the plywood.</p>
+        <img src="images/resin-vacuum.jpg" alt="resin-vacuum">
+        <img src="images/resin-poured.jpg" alt="resin-poured">
+        <p>Despite using the vacuum chamber, the surface of the pour was still filled with tiny air bubbles that are not easy to get rid of.
+        When the resin was fully cured, I used some sandpaper to try and even out the surface. Eventhough it does not look very pleasing, it is smooth to the touch.</p>
+        <img src="images/resin-cured.jpg" alt="resin-cured">
+        <img src="images/resin-sanded.jpg" alt="resin-sanded">
+      </div>
+      <div id="programming-final">
+        <h1>Programming</h1>
+        <p>I used a FTDI-UPDI programmer made previously to program my board.</p>
+        <img src="images/programmer.jpg" alt="programmer">
+        <p><b>NeoPixel Tests</b><br>
+        To test that the neopixels are working, I used the following code. I adapted it a few times to make sure what I wanted would work.</p>
+        <img src="images/neopixel-test-code.PNG" alt="neopixel-test">
+        <p><b>Soil Moisture Sensor Tests</b><br>
+        To test what the values or the soil moisture sensors are, I used the following code. I placed the sensor in some dry soil and took that value. This would be the limit.</p>
+        <img src="images/sensor-test-code.PNG" alt="sensor-test">
+        <p><b>Button Tests</b><br>
+        To make sure my button gives the correct output I want, I made use of my board's RX & TX pins such that the serial monitor would display the values.</p>
+        <img src="images/button-test-code.PNG" alt="button-test">
+        <p><b>Final Code</b><br>
+        Now that everything is working, I start to assemble my code. The final code is as follows. After the code is done, I had to make sure that things are working according to plan.</p>
+        <img src="images/final-code-1.PNG" alt="final-code-1">
+        <img src="images/final-code-2.PNG" alt="final-code-2">
+        <p>Button Activating Pump Test.</p>
+        <video width="100%" src="videos/button-pump-test.mp4" controls muted>
+          Your browser does not support the video.
+        </video>
+        <p>NeoPixel Colour Test.</p>
+        <video width="100%" src="videos/neopixel-test.mp4" controls muted>
+          Your browser does not support the video.
+        </video>
+      </div>
+      <div id="assembly">
 
+      </div>
+      <div id="finished">
+
+      </div>
+      <div id="review">
+
+      </div>
       <div id="showcase">
         <h3>Showcase</h3>
         <p>Here is a video of my final project fabrication process as well as how it works.</p>
@@ -191,7 +257,6 @@
         </div>
         <p>Here is my project presentation slide.</p>
         <img src="presentation.png" alt="presentation">
-        <p> </p>
       </div>
     </div>
   </body>
