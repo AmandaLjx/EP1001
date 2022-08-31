@@ -98,7 +98,7 @@ p{
   border-width: 4px;
 }
 .menu-bar ul li:hover .sub-menu-1 ul li{
-  width: 200px;
+  width: 300px;
   padding: 0;
   text-align: left;
 }
@@ -182,13 +182,14 @@ p{
 
 [alt="ftdi-outline"],[alt="ftdi-traces"],[alt="updi-outline"], [alt="updi-traces"],[alt="mods-cal"], [alt="mods-mill"],[alt="eagle-board-clean"],[alt="eagle-outline"],[alt="hello-traces-hole"],[alt="hello-outline-hole"],[alt="hello-traces"],[alt="hello-outline"],[alt="milled-hello"],[alt="hello-board"],[alt="custom-trace"],[alt="custom-outline"],
 [alt="milled-custom-traces"],[alt="milled-custom-pcb"],[alt="pcb-components"],[alt="pcb-soldered"],[alt="pcb-final"],[alt="pcb-markings"],[alt="cnc-stand1"],[alt="cnc-stand2"],[alt="soldered-neopixels"],[alt="neopixel-ohm"],[alt="resin-cured"],[alt="resin-sanded"],
-[alt="finished-v1"],[alt="finished-v2"],[alt="finished-v4"],[alt="top-v1"],[alt="top-v2"],[alt="top-v4"]{
+[alt="finished-v1"],[alt="finished-v2"],[alt="finished-v4"],[alt="top-v1"],[alt="top-v2"],[alt="top-v4"],[alt="mold-frame"],[alt="mold-model"],[alt="silicone-can"],[alt="silicone-p1"],[alt="silicone-p2"],[alt="silicone-poured"],[alt="epoxy-bottle"],[alt="epoxy-mix"]
+,[alt="epoxy-cured"],[alt="epoxy-demold"]{
   float: left;
   width: 50%;
   padding-bottom: 20px;
 }
 [alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"],[alt="hello-demo"],[alt="ATtiny-pins"],[alt="sketch-failed"],[alt="sketch-final"],[alt="pcb-problem"],[alt="jumper-wire"],[alt="neopixel-glued"],[alt="programmer"]
-{
+,[alt="mold-path"],[alt="mold-milled"],[alt="silicone-cured"],[alt="rock-hold"]{
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
@@ -205,24 +206,29 @@ p{
   float: left;
   width: 33%;
 }
-[alt="milled-ftdi"],[alt="ftdi"],[alt="stand-model1"],[alt="wired-slide"],[alt="resin-vacuum"]{
+[alt="milled-ftdi"],[alt="ftdi"],[alt="stand-model1"],[alt="wired-slide"],[alt="resin-vacuum"],[alt="mold-m1"]{
   width: 30%;
   margin-left: 20%;
 }
-[alt="milled-updi"],[alt="updi"],[alt="stand-model2"],[alt="wired-switch"],[alt="resin-poured"]{
+[alt="milled-updi"],[alt="updi"],[alt="stand-model2"],[alt="wired-switch"],[alt="resin-poured"],[alt="mold-m2"]{
   width: 30%;
 }
 [alt="eagle-export"],[alt="cnc-sand"],[alt="components"]{
   width: 30%;
   margin-left: 35%;
 }
-[alt="presentation"],[alt="neopixel-test"],[alt="sensor-test"],[alt="button-test"],[alt="final-code-1"],[alt="final-code-2"],[alt="attiny1614-pins"],[alt="all-components"]{
+[alt="presentation"],[alt="neopixel-test"],[alt="sensor-test"],[alt="button-test"],[alt="final-code-1"],[alt="final-code-2"],[alt="attiny1614-pins"],[alt="all-components"]
+,[alt="mold-mill-details"]{
   width: 100%;
 }
 [alt="finished-v3"],[alt="top-v3"]{
   clear: both;
   float: left;
   width: 50%;
+}
+[alt="edit-tool"]{
+  width: 80%;
+  margin-left: 10%;
 }
 
 

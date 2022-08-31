@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>I & A Programming - Amanda & EP1000</title>
+    <title>Molding & Casting - Amanda & EP1000</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <h1>Interface & Applications Programming</h1>
+      <h1>Molding & Casting</h1>
     </header>
     <div class="menu-bar">
       <ul>
@@ -32,7 +32,58 @@
       </ul>
     </div>
     <div class="main-text">
-
+      <h3>Topics Covered</h3>
+      <ul style="list-style-type: circle;">
+        <li><a href="#mold_making">Rigid Foam Mold</a></li>
+        <li><a href="#silicone-mold">Silicone Mold</a></li>
+        <li><a href="#epoxy-cast">Resin Cast</a></li>
+      </ul>
+      <h3>Introduction</h3>
+      <p>We are going to be learning how to design and fabricate our own mold and later on use that same mold to cast our model.<br>We would be using <b>rigid foam</b> to create the mold, then using <b>silicone</b> to create the final mold and finally casting with <b>epoxy</b>.</p>
+      <div id="mold_making">
+        <h3>Rigid Foam Mold</h3>
+        <p>While thinking of a design of what I wanted to cast out, I found this 3Dmodel -
+          <a href="https://www.thingiverse.com/thing:2538251/files">My Customized Rock Climbing Hold</a> by riggsbie on Thingiverse.
+          <br>I converted the .stl file into a <a href="files/rock_climbing_hold.f3d">.f3d file</a>. I then used this model to create my mold.</p>
+        <p>I started with the general frame for my mold based on the foam size. In this case was 25mm x 70mm x 70mm. I then included the rock hold model.</p>
+        <img src="images/mold-frame.png" alt="mold-frame">
+        <img src="images/mold-model.png" alt="mold-model">
+        <div class="embed">
+          <iframe src="https://ichat1941.autodesk360.com/shares/public/SH35dfcQT936092f0e434f9e1247522cd4fd?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+        </div>
+        <p>I then proceeded to create the g.code for this with Fusion 360's Manufacture Workspace. I used this tool.</p>
+        <img src="images/edit-tool.png" alt="edit-tool">
+        <p>This is my <a href="files/rock_hold_mold.nc">Rock Hold Mold g-code</a>. This is how my tool-path looked like.</p>
+        <img src="images/mold-setup-path.png" alt="mold-path">
+        <p>Using the Stepcraft 420, I milled out my rigid foam mold.</p>
+        <img src="images/mold-mill-details.jpg" alt="mold-mill-details">
+        <img src="images/mold-mill1.jpg" alt="mold-m1">
+        <img src="images/mold-mill2.jpg" alt="mold-m2">
+        <p>I cleaned out the mold, and this is the final product.</p>
+        <img src="images/mold-milled.jpg" alt="mold-milled">
+      </div>
+      <div id="silicone-mold">
+        <h3>Silicone Mold</h3>
+        <p>Using the rigid foam mold, I casted a silicon mold with Silicon Rubber RTV-620 which has a ratio of 1:1. First mix the 2 parts togeter qually and evenly, this allows for proper curing if not the silicone would not cure and solidify.</p>
+        <img src="images/silicone-can.jpeg" alt="silicone-can">
+        <img src="images/silicone-pour2.jpg" alt="silicone-p1">
+        <img src="images/silicone-pour.jpeg" alt="silicone-p2">
+        <img src="images/silicone-poured.jpg" alt="silicone-poured">
+        <p>As this silicone takes some time to cure, I waited till the next week to start the next process. When I was demolding I found it hard to demold but after abit of pulling here and there I managed to demold the silicone mold.</p>
+        <img src="images/silicone-cured.jpg" alt="silicone-cured">
+      </div>
+      <div id="epoxy-cast">
+        <h3>Resin Cast</h3>
+        <p>To create the final model, we would be using Smooth On-Smooth Cast 300. This resin is initially clear but once it cures it turns white. First we prepared the 1:1 ratio of both parts. As this only has a working time of 5-10 mins we need to work fast.
+        After mixing we would have to immediately pour it into the silicone mold.</p>
+        <img src="images/epoxy-bottle.jpeg" alt="epoxy-bottle">
+        <img src="images/epoxy-mix.jpeg" alt="epoxy-mix">
+        <p>As this resin is fast curing, after 15 mins or so, it is already hardened and ready to demold.</p>
+        <img src="images/epoxy-cured.jpg" alt="epoxy-cured">
+        <img src="images/epoxy-demold.jpg" alt="epoxy-demold">
+        <p>To finish off the rock climbing hold look, I added a socket head screw as well as a nut at the back.</p>
+        <img src="images/rock-hold.jpg" alt="rock-hold">
+      </div>
     </div>
   </body>
   <footer>
