@@ -189,7 +189,7 @@ p{
   padding-bottom: 20px;
 }
 [alt="pcb-mill-1"],[alt="eagle-new"],[alt="board-manager"],[alt="hello-demo"],[alt="ATtiny-pins"],[alt="sketch-failed"],[alt="sketch-final"],[alt="pcb-problem"],[alt="jumper-wire"],[alt="neopixel-glued"],[alt="programmer"]
-,[alt="mold-path"],[alt="mold-milled"],[alt="silicone-cured"],[alt="rock-hold"],[alt="cnc-screws"],[alt="cnc-z"]{
+,[alt="mold-path"],[alt="mold-milled"],[alt="silicone-cured"],[alt="rock-hold"],[alt="cnc-screws"],[alt="cnc-z"],[alt="intro-circles1"]{
   width: 50%;
   margin-left: 25%;
   margin-right: 25%;
@@ -218,7 +218,7 @@ p{
   margin-left: 35%;
 }
 [alt="presentation"],[alt="neopixel-test"],[alt="sensor-test"],[alt="button-test"],[alt="final-code-1"],[alt="final-code-2"],[alt="attiny1614-pins"],[alt="all-components"]
-,[alt="mold-mill-details"],[alt="coaster-line"],[alt="coaster-simulate"]{
+,[alt="mold-mill-details"],[alt="coaster-line"],[alt="coaster-simulate"],[alt="processing"]{
   width: 100%;
 }
 [alt="finished-v3"],[alt="top-v3"]{
@@ -226,7 +226,7 @@ p{
   float: left;
   width: 50%;
 }
-[alt="edit-tool"]{
+[alt="edit-tool"],[alt="intro-circles"]{
   width: 80%;
   margin-left: 10%;
 }
