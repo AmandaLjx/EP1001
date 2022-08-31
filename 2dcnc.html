@@ -34,11 +34,52 @@
     <div class="main-text">
       <h3>Topics Covered</h3>
       <ul style="list-style-type: circle;">
-        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#coaster">Coaster Test</a></li>
+        <li><a href="#large-cnc">Large Scale CNC</a></li>
       </ul>
-    </div>
-    <div class="fusion">
-      <p style="text-align:centre"><iframe src="https://ichat1941.autodesk360.com/shares/public/SH35dfcQT936092f0e43b0085c1c1de5f839?mode=embed" width="600" height="400" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe></p>
+      <h3>Introduction</h3>
+      <p>For 2D CNC we would be using the Versatil 2500, (4ftx 8ft) by EAS. I would be creating a coaster as a test piece and later followed by my large scale cnc model.</p>
+      <div id="coaster">
+        <h3>Coaster Test</h3>
+        <p>Before we start to work with the software, we should place the plywood on the machine bed first. In this case we used 15mm plywood.
+        <br>To secure the plywood to the machine bed, we dril screws through the plywood into the sacrificial wood at the bottom.</p>
+        <img src="images/cnc-screws.jpg" alt="cnc-screws">
+        <p>For starters we are making a coaster that has a pocket in the middle for our cup to rest in. When loading the file into VCarve pro, it was brought to attention that the path is not closed, this can be easily fixed in the software itself.</p>
+        <img src="images/coaster-line.jpg" alt="coaster-line">
+        <p>Before generating the toolpaths, I included some tabs such that the coaster does not fly or move during milling.
+        <br>Generating the pocket cut first, to a depth of 7mm. Then followed by the profile cut with the tabs included. This was done using the following tool settings.</p>
+        <p><b>Tool Settings:</b>
+        <br>Tool Diameter: 6mm
+        <br>Pass depth: 3mm
+        <br>Stepover: 2.4mm (40%)
+        <br>Spindle Speed: 12000rpm
+        <br>Chip Load: 0.254mm/min (max)</p>
+        <img src="images/coaster-tool.jpg" alt="coaster-tool">
+        <p>After the toolpaths are generated, it is a good practice to check if the outcome is correct and what you want. As shown is what I wanted so I proceeded to export the g-code to the EAS software.</p>
+        <img src="images/coaster-simulate.jpg" alt="coaster-simulate">
+        <p>Before milling can take place, machine configuration need to be conducted. First set the machine z-axis using the plunge function.</p>
+        <img src="images/cnc-z.jpg" alt="cnc-z">
+        <p>Once that is done, we can start running our g-code!</p>
+        <video width="100%" src="videos/coaster-milling.mp4" controls muted>
+          Your browser does not support the video.
+        </video>
+        <p>When the milling is completed, we would be left with something like this on the board. As we placed tabs earlier on, we would need to use a chisel and mallet to knock out our coaster.</p>
+        <img src="images/coaster-milled.jpg" alt="coaster-milled">
+        <img src="images/coaster-chisel.jpg" alt="coaster-chisel">
+        <p>After we remove our piece you can see that there are many burrs and strings of plywood fibres attached. A simple sanding with sand paper would get rid of this. And we have our finished product!</p>
+        <img src="images/coaster-burrs.jpg" alt="coaster-burrs">
+        <img src="images/coaster-finished.jpg" alt="coaster-done">
+      </div>
+      <div id="large-cnc">
+        <h3>Large Scale CNC</h3>
+        <p>For my large scale CNC, I wanted to make this adjustable standing desk. I found some inspiration from this design I saw <a href="http://www.jaswig.com/blog/2016/05/25/FAQs.html">here</a>.
+        <br>I made some changes such that it only uses plywood and still remains a flat pack material. The model is missing some support beams cause they are duplicates of each other so I did not put all of them in.</p>
+        <img src="images/standdesk.PNG" alt="standdesk">
+        <div class="embed">
+          <iframe src="https://ichat1941.autodesk360.com/shares/public/SH35dfcQT936092f0e43b0085c1c1de5f839?mode=embed" width="600" height="400" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe></p>
+        </div>
+        <p>However, I did not manage to complete this large scale CNC model for my standing desk as I ran out of time. As such please refer to my <a href="finalproject.html#cnc-stand">Final Project CNC Milling</a> which has the same few concepts in place.</p>
+      </div>
     </div>
   </body>
   <footer>
